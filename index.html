@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="materialApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
+    <!-- endbower -->
+</head>
+<body id="popupContainer" ng-controller="MainCtrl as vm" layout-fill layout="column" class="inset" ng-cloak paddi>
+<md-toolbar class="md-warn">
+    <div class="md-toolbar-tools">
+        <md-button class="btn1" ng-click="vm.sayHello()">SayHello</md-button>
+    </div>
+</md-toolbar>
+<md-content flex layout-padding>
+    <h1>
+        {{ vm.text }}
+    </h1>
+    <md-button class="md-primary md-raised" ng-click="vm.alert($event)"   >
+        Alert Dialog
+    </md-button>
+</md-content>
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<!-- endbower -->
+<script src="app/controller/main.controller.js"></script>
+<script src="app/controller/controller.js"></script>
+<script src="app/bootstrap.js"></script>
+</body>
+</html>
