@@ -1,0 +1,27 @@
+{
+  "name": "material-demo",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "xierenyuan@qq.com"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/xierenyuan/material-demo",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "angularjs#~1.5.5",
+    "angular-material": "~1.0.7"
+  },
+  "dependencies": {
+    "angular-material": "~1.0.7",
+    "angular-ui-router": "~0.2.18"
+  }
+}
