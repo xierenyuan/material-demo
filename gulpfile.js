@@ -9,6 +9,8 @@ let babel = require("gulp-babel");
 
 let concat = require('gulp-concat');
 
+let config = require('./gulp/config');
+
 gulp.task('bower', ()=> {
     gulp.src('index.html')
         .pipe(wiredep())
@@ -22,4 +24,15 @@ gulp.task('js', ()=> {
             presets: ['es2015']
         }))
         .pipe(gulp.dest('./dist'));
+});
+
+var webpack = require('gulp-webpack');
+//https://github.com/shama/vinyl-named
+var named = require('vinyl-named');
+
+gulp.task('default', function () {
+    return gulp.src('src/entry.js')
+        .pipe(named())
+        .pipe(webpack(require('./webpack.config.js')))
+        .pipe(gulp.dest('dist/'));
 });
