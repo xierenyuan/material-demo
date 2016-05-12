@@ -4,6 +4,7 @@
  * @auther xierenhong
  * @date 16/4/21
  */
+require('./controller/controller');
 
 let AppModule = angular.module('materialApp', ['ngMaterial', 'materialApp.controller']);
 
