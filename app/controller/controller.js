@@ -7,7 +7,6 @@
 
 import MainController from './main.controller';
 
-
 const AppController = angular.module('materialApp.controller', []);
 
 AppController.controller('MainCtrl', MainController);

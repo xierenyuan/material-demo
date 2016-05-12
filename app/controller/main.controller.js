@@ -43,7 +43,6 @@ class MainController {
                     .targetEvent(ev)
             );
         }
-
     }
 }
 

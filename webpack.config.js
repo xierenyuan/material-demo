@@ -24,7 +24,6 @@ module.exports = {
                 test: /\.scss$/,
                 loaders: ["style", "css?sourceMap", "sass?sourceMap"]
             },
-
             {
                 test: /\.js$/,
                 exclude: /(node_modules|bower_components)/,
