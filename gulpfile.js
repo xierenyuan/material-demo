@@ -34,5 +34,5 @@ gulp.task('default', function () {
     return gulp.src('src/entry.js')
         .pipe(named())
         .pipe(webpack(require('./webpack.config.js')))
-        .pipe(gulp.dest('dist/'));
+       // .pipe(gulp.dest('dist/'));
 });
