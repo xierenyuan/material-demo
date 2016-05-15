@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
     <!-- endbower -->
+    <link rel="stylesheet" href="./dist/main.css" />
 </head>
 <body id="popupContainer" ng-controller="MainCtrl as vm" layout-fill layout="column" class="inset" ng-cloak paddi>
 
@@ -20,12 +21,10 @@
     <h1>
         {{ vm.text }}
     </h1>
-    <md-button class="md-primary md-raised" ng-click="vm.alert($event)"   >
+    <md-button class="md-primary md-raised" ng-click="vm.alert($event)">
         Alert Dialog
     </md-button>
 </md-content>
-
-
 <!-- bower:js -->
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
