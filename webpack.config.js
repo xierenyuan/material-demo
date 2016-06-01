@@ -1,5 +1,7 @@
 "use strict";
+//https://github.com/TheLarkInn/angular-starter-es6-webpack
 
+//https://github.com/AngularClass/NG6-starter
 let webpack = require('webpack');
 let path = require('path');
 let ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -46,7 +48,7 @@ module.exports = {
         ]
     },
     watch: true,
-    devtool: 'source-map',
+   // devtool: 'source-map',
     colors: true,
     resolve: {
         //自动扩展文件后缀名，意味着我们require模块可以省略不写后缀名
