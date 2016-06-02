@@ -7,3 +7,5 @@
 import '../sass/index.scss';
 import './bootstrap';
 
+console.log('hello word');
+console.log('hello word');

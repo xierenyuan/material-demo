@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --hot --inline",
-    "dist": "webpack"
+    "dev": "webpack --progress --colors --config webpack.dev.config.js ",
+    "start": "webpack-dev-server --config webpack.dev.config.js",
+    "dist": "webpack",
+    "build": "webpack --prod --config webpack.build.config.js "
   },
   "repository": {
     "type": "git",
@@ -19,31 +20,30 @@
   },
   "homepage": "https://github.com/xierenyuan/material-demo#readme",
   "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.8.0",
     "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
     "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
     "gulp-webpack": "^1.5.0",
     "html-loader": "^0.4.3",
     "jsx-loader": "^0.13.2",
     "less-loader": "^2.2.3",
+    "ng-annotate-loader": "^0.1.0",
     "node-sass": "^3.5.3",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "vinyl-named": "^1.1.0",
     "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1",
     "wiredep": "^4.0.0"
   },
-  "dependencies": {
-    "autoprefixer-loader": "^3.2.0",
-    "babel-core": "^6.8.0",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.6.0",
-    "babel-preset-react": "^6.5.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-concat": "^2.6.0",
-    "ng-annotate-loader": "^0.1.0"
-  }
+  "dependencies": {}
 }

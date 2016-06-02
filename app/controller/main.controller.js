@@ -7,6 +7,7 @@
 class MainController {
     constructor($scope, $mdToast, $mdDialog) {
         this.$scope = $scope;
+        console.log('22');
         //注册服务
         this.$inject = ['$scope', '$mdToast', '$mdDialog'];
         this.$mdDialog = $mdDialog;
